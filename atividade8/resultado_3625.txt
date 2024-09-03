@@ -1,0 +1,13 @@
+Peso total antes da Mochila Cheia: 347
+Valor total antes da Mochila Cheia: 270
+
+Peso total depois da Mochila Cheia: 369
+Valor total depois da Mochila Cheia: 289
+
+Peso total depois da Substituição de Objeto: 241
+Valor total depois da Substituição de Objeto: 334
+
+Peso total depois do Hill Climbing: 354
+Valor total depois do Hill Climbing: 473
+
+Tempo de execução: 0.000441158 segundos
