@@ -1,0 +1,40 @@
+Fibonacci:
+
+Fibonacci de 10 é 55
+Tempo de execução: 0.003705 ms
+
+Fibonacci de 15 é 610
+Tempo de execução: 0.009092 ms
+
+Fibonacci de 20 é 6765
+Tempo de execução: 0.257108 ms
+
+Fibonacci de 30 é 832040
+Tempo de execução: 25.4481 ms
+
+Fibonacci de 40 é 102334155
+Tempo de execução: 788.879 ms
+
+Fibonacci de 50 é -298632863
+Tempo de execução: 102235 ms
+
+
+Fibonacci_memorizacao:
+
+Fibonacci de 10 é 55
+Tempo de execução: 2.386e-06 segundos
+
+Fibonacci de 15 é 610
+Tempo de execução: 2.079e-06 segundos
+
+Fibonacci de 20 é 6765
+Tempo de execução: 3.88e-06 segundos
+
+Fibonacci de 30 é 832040
+Tempo de execução: 2.808e-06 segundos
+
+Fibonacci de 40 é 102334155
+Tempo de execução: 3.621e-06 segundos
+
+Fibonacci de 50 é -298632863
+Tempo de execução: 6.199e-06 segundos
