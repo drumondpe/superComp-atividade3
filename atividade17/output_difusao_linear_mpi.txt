@@ -1,0 +1,4 @@
+Processo 0 enviou para processo 1: Mensagem inicial do processo 0
+Processo 1 recebeu de processo 0: Mensagem inicial do processo 0
+Processo 1 enviou para processo 2: Mensagem inicial do processo 0
+Processo 2 recebeu de processo 1: Mensagem inicial do processo 0

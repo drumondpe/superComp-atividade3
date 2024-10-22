@@ -1,0 +1,4 @@
+Processo 0 iniciou com valor: 1
+Processo 1 somou seu valor: 2 -> Soma atual: 3
+Processo 2 exibiu a soma total: 6
+Processo 2 somou seu valor: 3 -> Soma atual: 6

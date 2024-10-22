@@ -1,0 +1,8 @@
+Processo 1 recebeu do processo 0: Olá processo 1, sou o processo 0
+Processo 1 enviou para o processo 0: Olá processo 0, sou o processo 1
+Processo 0 enviou para processo 1: Olá processo 1, sou o processo 0
+Processo 0 recebeu do processo 1: Olá processo 0, sou o processo 1
+Processo 0 enviou para processo 2: Olá processo 2, sou o processo 0
+Processo 0 recebeu do processo 2: Olá processo 0, sou o processo 2
+Processo 2 recebeu do processo 0: Olá processo 2, sou o processo 0
+Processo 2 enviou para o processo 0: Olá processo 0, sou o processo 2
