@@ -1,0 +1,5 @@
+Processo raiz configurou o número de iterações para: 10000
+Processo 0 - Resultado local: 2.49975e+07
+Processo 3 - Resultado local: 2.49975e+07
+Processo 2 - Resultado local: 2.49975e+07
+Processo 1 - Resultado local: 2.49975e+07
