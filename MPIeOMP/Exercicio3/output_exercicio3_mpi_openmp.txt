@@ -1,0 +1,2 @@
+Média dos elementos do vetor: 500.5
+Tempo de execução: 9.702e-05 segundos
