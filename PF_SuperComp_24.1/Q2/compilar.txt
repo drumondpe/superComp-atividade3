@@ -1,0 +1,1 @@
+mpic++ -fopenmp mpi_openmp.cpp -o mpi_openmp

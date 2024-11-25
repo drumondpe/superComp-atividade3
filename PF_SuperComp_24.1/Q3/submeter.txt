@@ -1,0 +1,3 @@
+sbatch matrix_job_2cores.slurm
+sbatch matrix_job_4cores.slurm
+sbatch matrix_job_8cores.slurm

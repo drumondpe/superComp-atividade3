@@ -1,0 +1,65 @@
+Questão 5 – Fundamentos de Paralelismo
+
+Parte A: Modelo de Memória Compartilhada e Memória Distribuída (0,75 ponto)
+
+Memória Compartilhada
+
+Definição: Todos os processadores têm acesso a um espaço único de memória compartilhada. É um modelo típico em sistemas multiprocessadores e multithread.
+
+Prós:
+Comunicação entre threads é rápida, pois elas acessam o mesmo espaço de memória.
+Mais fácil de programar em relação à memória distribuída.
+Útil para aplicações que exigem muita interação entre threads.
+
+Contras:
+Escalabilidade limitada, pois o acesso simultâneo à memória pode causar contenção.
+Dificuldades de sincronização, como condições de corrida e bloqueios.
+Requer hardware específico que suporte memória compartilhada.
+
+Memória Distribuída
+Definição: Cada processador tem sua própria memória local, e a comunicação é feita por troca de mensagens.
+
+Prós:
+Escalabilidade maior, pois cada nó trabalha de forma independente.
+Adequado para sistemas de larga escala e supercomputadores.
+
+Contras:
+Comunicação entre nós é mais lenta, pois envolve envio e recepção de mensagens.
+Mais difícil de programar, devido à necessidade de gerenciar a troca de dados explicitamente.
+Maior latência em operações de comunicação.
+Modelos Adotados pelas Bibliotecas
+
+OpenMP: Utiliza o modelo de memória compartilhada. É adequado para paralelismo em sistemas multicore, onde threads compartilham um único espaço de memória.
+
+MPI: Utiliza o modelo de memória distribuída. Cada processo tem sua própria memória local, e a troca de informações é feita por mensagens explícitas entre os processos.
+
+Thrust: Opera sobre o modelo de memória compartilhada na GPU. No entanto, se usado em sistemas de computação distribuída, pode integrar-se a modelos de memória distribuída.
+
+Parte B: Escalonamento Dinâmico em OpenMP (0,75 ponto)
+O que é Escalonamento Dinâmico?
+No OpenMP, o escalonamento dinâmico é uma estratégia de balanceamento de carga que distribui blocos de iterações de um loop às threads à medida que elas terminam seus trabalhos.
+Cada thread solicita novas tarefas ao terminar suas iterações anteriores, garantindo uma alocação adaptativa de carga.
+Vantagens do Escalonamento Dinâmico
+
+Balanceamento de Carga:
+Útil em aplicações onde as iterações de um loop têm tempos de execução variáveis.
+Reduz o desperdício de recursos computacionais, pois threads ociosas recebem novos blocos de iterações.
+
+Flexibilidade:
+Ajusta dinamicamente a alocação de trabalho com base na disponibilidade das threads, otimizando o desempenho.
+
+Mitigação de Hot Spots:
+Em loops onde algumas iterações exigem mais processamento, o escalonamento dinâmico previne que poucas threads fiquem sobrecarregadas enquanto outras permanecem ociosas.
+Exemplo de Uso
+No OpenMP, podemos usar o pragma #pragma omp for schedule(dynamic, chunk_size) para ativar o escalonamento dinâmico. A chunk_size define o número de iterações atribuídas a cada thread por vez.
+
+Aplicação Prática
+Cenário Ideal: Processamento de dados com variabilidade de carga, como:
+Processamento de imagens, onde diferentes regiões têm complexidades variadas.
+Simulações científicas com cargas desbalanceadas entre diferentes partes do domínio.
+Benefício: As threads mais rápidas podem continuar trabalhando em novos blocos de dados enquanto as mais lentas finalizam suas tarefas, resultando em maior eficiência geral.
+Resumo
+
+Parte A: OpenMP usa memória compartilhada; MPI usa memória distribuída; Thrust usa memória compartilhada na GPU.
+
+Parte B: O escalonamento dinâmico melhora o desempenho em aplicações com variabilidade de carga, balanceando o trabalho entre threads de forma adaptativa.
